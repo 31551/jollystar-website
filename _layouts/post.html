@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="page-banner page-banner-sm" style="background-image: url('{{ '/assets/images/banner-news.jpg' | relative_url }}');">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+    </div>
+</div>
+<div class="container page-content">
+    <article class="news-article">
+        <div class="news-meta">
+            <span class="date">{{ page.date | date: '%Y-%m-%d' }}</span>
+            {% if page.categories %}
+            <span class="category">{{ page.categories | join: ', ' }}</span>
+            {% endif %}
+        </div>
+        <div class="news-body">
+            {{ content }}
+        </div>
+        <div class="news-nav">
+            {% if page.previous %}
+            <a href="{{ page.previous.url | relative_url }}" class="prev">← 上一篇</a>
+            {% endif %}
+            {% if page.next %}
+            <a href="{{ page.next.url | relative_url }}" class="next">下一篇 →</a>
+            {% endif %}
+        </div>
+    </article>
+</div>

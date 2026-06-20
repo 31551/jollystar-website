@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="page-banner" style="background-image: url('{{ page.banner | default: '/assets/images/banner-default.jpg' | relative_url }}');">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+    </div>
+</div>
+<div class="container page-content">
+    {% if page.sidebar != false %}
+    <div class="content-with-sidebar">
+        <aside class="sidebar">
+            <h3>{{ page.sidebar_title | default: '产品分类' }}</h3>
+            <ul class="sidebar-nav">
+                <li><a href="{{ '/products/1064nm/' | relative_url }}">1064nm场镜</a></li>
+                <li><a href="{{ '/products/355nm/' | relative_url }}">355nm场镜</a></li>
+                <li><a href="{{ '/products/532nm/' | relative_url }}">532nm场镜</a></li>
+                <li><a href="{{ '/products/focus/' | relative_url }}">聚焦镜头</a></li>
+                <li><a href="{{ '/products/custom/' | relative_url }}">定制镜头</a></li>
+                <li><a href="{{ '/products/accessories/' | relative_url }}">周边配件</a></li>
+                <li><a href="{{ '/products/others/' | relative_url }}">其它波长镜头</a></li>
+            </ul>
+        </aside>
+        <article class="main-article">
+            {{ content }}
+        </article>
+    </div>
+    {% else %}
+    <article class="full-article">
+        {{ content }}
+    </article>
+    {% endif %}
+</div>

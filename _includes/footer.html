@@ -1,0 +1,44 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>北京卓瑞斯光电科技有限公司</h4>
+                <p>成立于2007年，专注于激光光学系统、医疗光学系统、红外光学系统的研发、制造与销售。</p>
+            </div>
+            <div class="footer-col">
+                <h4>产品分类</h4>
+                <ul>
+                    <li><a href="{{ '/products/1064nm/' | relative_url }}">1064nm场镜</a></li>
+                    <li><a href="{{ '/products/355nm/' | relative_url }}">355nm场镜</a></li>
+                    <li><a href="{{ '/products/532nm/' | relative_url }}">532nm场镜</a></li>
+                    <li><a href="{{ '/products/focus/' | relative_url }}">聚焦镜头</a></li>
+                    <li><a href="{{ '/products/accessories/' | relative_url }}">周边配件</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="{{ '/about/' | relative_url }}">关于我们</a></li>
+                    <li><a href="{{ '/news/' | relative_url }}">新闻动态</a></li>
+                    <li><a href="{{ '/contact/' | relative_url }}">联系我们</a></li>
+                    <li><a href="{{ '/careers/' | relative_url }}">人才招聘</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系方式</h4>
+                <ul class="contact-info">
+                    <li><span class="icon">📞</span> {{ site.phone }}</li>
+                    <li><span class="icon">✉</span> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                    <li><span class="icon">🌐</span> cn.jollystar.com</li>
+                    <li><span class="icon">📍</span> 北京市通州区</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>

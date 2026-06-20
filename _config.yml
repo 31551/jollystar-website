@@ -1,0 +1,80 @@
+# Site settings
+title: 北京卓瑞斯光电科技有限公司
+short_title: 卓瑞斯光电
+email: jollystar@jollystar.com
+phone: 010-69965385
+description: 激光场镜厂家，远心镜头定制，激光场镜，石英场镜，聚焦镜头，光学镜头定制 — 北京卓瑞斯光电科技有限公司
+keywords: 激光场镜,远心场镜,石英场镜,聚焦镜头,光学镜头定制
+url: "https://cn.jollystar.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /news/:year/:month/:day/:title/
+
+# Collections
+collections:
+  products:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Navigation
+header_pages:
+  - title: 首页
+    url: /
+  - title: 关于我们
+    url: /about/
+  - title: 产品展示
+    url: /products/
+    children:
+      - title: 1064nm场镜
+        url: /products/1064nm/
+      - title: 355nm场镜
+        url: /products/355nm/
+      - title: 532nm场镜
+        url: /products/532nm/
+      - title: 聚焦镜头
+        url: /products/focus/
+      - title: 定制镜头
+        url: /products/custom/
+      - title: 周边配件
+        url: /products/accessories/
+      - title: 其它波长镜头
+        url: /products/others/
+  - title: 新闻动态
+    url: /news/
+    children:
+      - title: 公司动态
+        url: /events/
+      - title: 行业资讯
+        url: /industry/
+  - title: 人才招聘
+    url: /careers/
+  - title: 联系我们
+    url: /contact/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
