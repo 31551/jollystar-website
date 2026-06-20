@@ -6,7 +6,7 @@ phone: 010-69965385
 description: 激光场镜厂家，远心镜头定制，激光场镜，石英场镜，聚焦镜头，光学镜头定制 — 北京卓瑞斯光电科技有限公司
 keywords: 激光场镜,远心场镜,石英场镜,聚焦镜头,光学镜头定制
 url: "https://cn.jollystar.com"
-baseurl: ""
+baseurl: "/jollystar-website"
 
 # Build settings
 markdown: kramdown
