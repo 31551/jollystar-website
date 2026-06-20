@@ -145,7 +145,7 @@ ul, ol { list-style: none; }
     .main-nav > ul { flex-direction: column; }
     .main-nav > ul > li > a { line-height: 44px; padding: 0 20px; border-top: 1px solid #f5f5f5; }
     .main-nav > ul > li.active::after { display: none; }
-    .sub-menu { display: none; position: static; box-shadow: none; border-radius: 0; background: transparent; min-width: 0; padding: 4px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .sub-menu { display: none; position: static; box-shadow: none; border-radius: 0; background: transparent; min-width: 0; padding: 4px; flex-wrap: wrap; gap: 6px; }
     .has-children.open .sub-menu { display: flex; }
     .sub-menu li { border: none; flex: 1 1 calc(50% - 3px); min-width: 120px; }
     .sub-menu a { display: flex; align-items: center; justify-content: center; text-align: center; padding: 10px 6px; font-size: 13px; background: #fff; border: 1px solid #dce3ec; border-radius: 6px; color: #333; white-space: nowrap; min-height: 40px; }
