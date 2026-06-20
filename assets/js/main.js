@@ -10,16 +10,16 @@
         });
     }
 
-    // Dropdown toggle on mobile
-    var hasChildren = document.querySelectorAll('.has-children > a');
-    hasChildren.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('open');
-            }
-        });
-    });
+    // Dropdown toggle on mobile (disabled - sub-menus always visible)
+    // var hasChildren = document.querySelectorAll('.has-children > a');
+    // hasChildren.forEach(function(link) {
+    //     link.addEventListener('click', function(e) {
+    //         if (window.innerWidth <= 900) {
+    //             e.preventDefault();
+    //             this.parentElement.classList.toggle('open');
+    //         }
+    //     });
+    // });
 
     // Close nav when clicking outside
     document.addEventListener('click', function(e) {
